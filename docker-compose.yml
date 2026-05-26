@@ -4,13 +4,13 @@ volumes:
     driver_opts:
       type: 'none'
       o: 'bind'
-      device: '/home/kclaudan/srcs/wordpress'
+      device: '/home/kclaudan/data'
   mariadb:
     driver: local
     driver_opts:
       type: 'none' 
       o: 'bind'
-      device: '/home/kclaudan/srcs/mariadb'
+      device: '/home/kclaudan/data'
 
 networks:
     inception:

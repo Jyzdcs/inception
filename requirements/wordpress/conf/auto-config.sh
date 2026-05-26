@@ -4,7 +4,6 @@ until mysqladmin ping -h mariadb -u $SQL_USER -p$SQL_PASSWORD --silent 2>/dev/nu
     sleep 1
 done
 
-# Ne créer wp-config.php que s'il n'existe pas déjà
 if [ ! -f /var/www/html/wp-config.php ]; then
     wp core download --allow-root \
         --path='/var/www/html'
